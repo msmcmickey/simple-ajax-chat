@@ -1,3 +1,11 @@
+** NOTE ** THIS CODE IS A BRANCH OF ANOTHER PROJECT. I HAVE MODIFIED THIS PROJECT TO ADD SOME FUNCTIONALITY OF MY OWN. I DO NOT TAKE CREDIT FOR THIS PROJECT, ONLY THE CHANGES AND ADDITIONS MADE BY ME, WHICH ARE NOTED IN THE FILES LISTS AND DESCRIPTION BELOW -- Kelli 
+
+2018-02-16 -- added code to sac.php to use data from freegeopip.net to create default usernames based on geolocation data.
+              Also added code to restrict usernames that unregistered users can create in the chat box. 
+              
+
+PLEASE NOTE: If you are using WP SUPER CACHE or any other type of caching in Wordpress, you must disable it for the url(s) of the pages utilising the chat box, or usernames will be duplicated and other bad things will happen.
+
 === Simple Ajax Chat ===
 
 Plugin Name: Simple Ajax Chat
