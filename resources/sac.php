@@ -538,10 +538,12 @@ function sac_getCookie(c) {
 function checkName() {
 	sacCookie = sac_getCookie('sacUserName');
 	currentName = document.getElementById('sac_name');
-	<!-- DOES NOT ALLOW USER TO ENTER A USERNAME CONTAINING THE WORD 'ADMIN' -->
-	visibleName = currentName.value;
-	if (visibleName.indexOf('Admin') >= 0) {currentName.value = '';}
-	if (visibleName.indexOf('admin') >= 0) {currentName.value = '';}
+	<!-- DOES NOT ALLOW USER TO ENTER A USERNAME CONTAINING words in banList array' -->
+	var visibleName = currentName.value;
+	visibleName = visibleName.toLowerCase();
+	var banList = ["admin", "bannedword1", "bannedword2"];
+	if (banList.indexOf(visibleName) >= 0) {currentName.value = '';}
+	
    <!-- **************  -->
 	
 	<?php if (isset($use_username) && $use_username && !empty($logged_username)) : ?>
